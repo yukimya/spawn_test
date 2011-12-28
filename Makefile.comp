@@ -1,0 +1,3 @@
+.fpp.o:
+	$(PP) $(PPFLAGS) $*.fpp $*.f90
+	$(F90) $(FFLAGS) $(FFTWFLAGS) -I$(DIR_LIB_MARBLE) -I$(DIR_LIB_NAMD) -I$(DIR_LIB_MINI) -I$(DIR_LIB_REIN) -c $*.f90

@@ -1,0 +1,17 @@
+#
+#  Makefile for Intel Fortran
+#
+F90	= mpif90
+CC	= mpicc
+CPP	= mpic++
+PP	= fpp
+PPFLAGS = -P
+FFLAGS	= -c -O3 -W0 -xW
+#-L/opt/intel/Compiler/11.0/083/lib/intel64
+CFLAGS	= -c -O3
+CPPFLAGS= -c -O3
+#LFLAGS	= -Vaxlib
+#LLAPACK	= -L/opt/intel/mkl/9.1/lib/32 -lmkl -lmkl_lapack -lpthread
+RM	= rm -rf
+DEST    = ../Bin
+INSTALL	= mv
